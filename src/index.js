@@ -3,13 +3,13 @@ const pokeForm = document.querySelector(".poke-form");
 const pokeList = document.querySelector(".poke-list");
 // targeting the pokemon ul list
 
-const state = {
+let state = {
   pokemons: [],
-};
+}; //local state of data i get remotely
 
 const setCurrentState = (pokemons) => {
   state.pokemons = pokemons;
-};
+}; // adding and deleting pokemons that then update state
 
 const renderCurrentState = () => {
   pokemonsUl.innerHTML = "";
